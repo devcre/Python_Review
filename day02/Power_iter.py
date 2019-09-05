@@ -9,3 +9,15 @@ def power(b, n):
     return ans
 
 print(power(5,3))
+
+# 계산을 빠르게 하는 방법
+def power_short(b,n):
+    ans = 1
+    while n > 0:
+        if n % 2 == 0:
+            b , n = b**2, n//2
+        else:
+            ans, n = b*ans, n-1
+    return ans
+
+print(power_short(5,3))

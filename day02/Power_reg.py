@@ -7,4 +7,16 @@ def power(b, n):
     else:
         return 1
 
-print(power(0,0))
+print(power(5,3))
+
+# 계산을 빠르게 하는 방법
+def power_short(b,n):
+    if n > 0:
+        if n % 2 == 0: # n이 짝수(even)인 경우
+            return power(b**2, n//2)
+        else:
+            return b * power(b, n-1)
+    else:
+        return 1
+
+print(power_short(5,3))
