@@ -68,7 +68,7 @@ def find_position(num, board):
 
 # 이동할 번호의 위치좌표 pos와 빈칸의 좌표 empty 그리고 퍼즐보드 board를 인수로 받아서,
 # pos가 empty와 이웃해 있는지 확인하고 만약 그렇다면 pos와 empty의 위치가 바뀐 board와 바뀐 empty를 쌍으로 내주는 함수.
-# 만약 pos와 empty가 이웃해 있지 않다면 움직일 수 없다는 매세지를 출력하고 바뀌지 않은 상태의 empty와 보드를 그래도 내준다.
+# 만약 pos와 empty가 이웃해 있지 않다면 움직일 수 없다는 매세지를 출력하고 바뀌지 않은 상태의 empty와 보드를 그대로 내준다.
 def move(pos, empty, board):
     # 옮길 숫자
     num = board[pos[0]][pos[1]]
